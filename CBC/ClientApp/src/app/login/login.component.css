@@ -1,0 +1,28 @@
+.loginInput {
+  width: 100%;
+}
+
+.container {
+  margin: 15% auto;
+}
+
+/*For Computers*/
+@media screen and (min-width: 1024px) {
+
+  input {
+    margin-bottom: 15px;
+  }
+
+  .container {
+    width: 30%;
+    padding: 15px;
+    margin: 5% auto;
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow: 5px 5px 10px #666666, -5px -5px 10px #ffffff;
+  }
+
+  #loginBtn {
+    margin-top: 15px;
+  }
+}

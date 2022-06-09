@@ -1,0 +1,31 @@
+<div class="title">
+  <h1>Get An Estimate</h1>
+</div>
+<div class="wrapper">
+  <div class="customer-info">
+    <h4>First Name</h4>
+    <input id="firstName" name="firstName" />
+    <h4>Last Name</h4>
+    <input id="lastName" name="lastName" />
+    <h4>Email</h4>
+    <input id="email" name="email" />
+    <h4>Phone Number</h4>
+    <input id="phone" name="phone" />
+    <h4>Business</h4>
+    <input id="business" name="business" />
+    <h4>Package</h4>
+    <select id="package" (change)="getPackage()">
+      <option disabled>Choose a package...</option>
+      <option class="validOption" id="packages"
+              *ngFor="let p of allPackages"
+              [value]=p.id>
+        {{p.name}}
+      </option>
+    </select>
+    <button id="save">Save</button>
+  </div>
+</div>
+<div class="total">
+  <h4>Total: ${{total}}</h4>
+</div>
+

@@ -1,0 +1,33 @@
+<h1>User Management</h1>
+<div class="container">
+  <div class="add-user">
+    <h4>Add User</h4>
+    <label class="largeLbl">First Name</label>
+    <input class="form-input" id="firstName" />
+    <label class="largeLbl">Last Name</label>
+    <input class="form-input" id="lastName" />
+    <label class="largeLbl">User Name</label>
+    <input class="form-input" id="userName" />
+    <label class="largeLbl">Access Level</label>
+    <select class="form-input" id="access">
+      <option disabled>Select user access level...</option>
+      <option>Admin</option>
+      <option>Employee</option>
+    </select>
+    <label class="largeLbl">Password</label>
+    <input type="password" class="form-input" id="password" />
+    <input type="checkbox" name="showPass" id="showPass" />
+    <label for="showPass">&nbsp; Show Password</label><br />
+    <button id="loginBtn">Create</button>
+  </div>
+  <div class="changePassword">
+    <h4>Change Password</h4>
+    <select class="form-input" id="selectUser">
+      <option disabled>Select a user...</option>
+      <option>Chris Brooks</option>
+      <option>Holden Graves</option>
+    </select>
+    <label class="largeLbl">New Password</label>
+    <input type="password" class="form-input" />
+  </div>
+</div>
