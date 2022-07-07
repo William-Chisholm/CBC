@@ -8,6 +8,10 @@ button {
   border-radius: 2px;
 }
 
+  button:disabled {
+    background-color: rgb(255 104 0 / 0.70);
+  }
+
 /* Provide sufficient contrast against white background */
 a {
   color: #0366d6;
@@ -24,5 +28,5 @@ code {
 }
 
 my-container {
-  margin: 0!important;
+  margin: 0 !important;
 }

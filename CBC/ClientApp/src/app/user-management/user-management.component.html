@@ -2,23 +2,25 @@
 <div class="container">
   <div class="add-user">
     <h4>Add User</h4>
-    <label class="largeLbl">First Name</label>
-    <input class="form-input" id="firstName" />
-    <label class="largeLbl">Last Name</label>
-    <input class="form-input" id="lastName" />
-    <label class="largeLbl">User Name</label>
-    <input class="form-input" id="userName" />
-    <label class="largeLbl">Access Level</label>
-    <select class="form-input" id="access">
-      <option disabled>Select user access level...</option>
-      <option>Admin</option>
-      <option>Employee</option>
-    </select>
-    <label class="largeLbl">Password</label>
-    <input type="password" class="form-input" id="password" />
-    <input type="checkbox" name="showPass" id="showPass" />
-    <label for="showPass">&nbsp; Show Password</label><br />
-    <button id="loginBtn">Create</button>
+    <form id="addUserForm">
+      <label class="largeLbl">First Name</label>
+      <input class="form-input" id="firstName" />
+      <label class="largeLbl">Last Name</label>
+      <input class="form-input" id="lastName" />
+      <label class="largeLbl">User Name</label>
+      <input class="form-input" id="userName" />
+      <label class="largeLbl">Access Level</label>
+      <select class="form-input" id="access">
+        <option value="none" disabled>Select user access level...</option>
+        <option value="1">Admin</option>
+        <option value="2">Employee</option>
+      </select>
+      <label class="largeLbl">Password</label>
+      <input type="password" class="form-input" id="password" />
+      <input type="checkbox" name="show-pass" id="show-pass" (click)="showPass()"/>
+      <label for="show-pass">&nbsp; Show Password</label><br />
+      <button id="createBtn" (click)="addUser()">Create</button>
+    </form>
   </div>
   <div class="changePassword">
     <h4>Change Password</h4>
@@ -30,4 +32,12 @@
     <label class="largeLbl">New Password</label>
     <input type="password" class="form-input" />
   </div>
+</div>
+
+<div class="modal-backdrop" id="backdrop"></div>
+<div class="modal-window" id="modal">
+  <p id="modal-message">New user has been created...</p>
+  <button class="modal-button" (click)="hideBackdrop();hideModal()">
+    OK
+  </button>
 </div>

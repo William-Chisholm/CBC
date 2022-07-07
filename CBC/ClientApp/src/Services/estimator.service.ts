@@ -22,7 +22,7 @@ export class EstimatorService {
   }
 
   public getPackage(pkg: string): Observable<Package[]> {
-    console.log(pkg);
+    console.log(this._baseUrl + 'Estimator/GetPackage/' + pkg);
     return this._http.get(this._baseUrl + 'Estimator/GetPackage/' + pkg).pipe(map(res => <Package[]>res));
   }
 }

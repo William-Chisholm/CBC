@@ -14,6 +14,7 @@ namespace CBC.Controllers
         [HttpGet("{package}")]
         public List<Package> GetPackage(string package)
         {
+            Console.WriteLine("GETTING PACKAGE...");
             return Queries.GetPackage(package);
         }
 

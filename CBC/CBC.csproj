@@ -32,6 +32,9 @@
     <None Remove="ClientApp\src\app\estimator.service.ts" />
     <None Remove="ClientApp\src\Models\package-list.model.ts" />
     <None Remove="ClientApp\src\Models\package.model.ts" />
+    <None Remove="ClientApp\src\Models\user-info.model.ts" />
+    <None Remove="ClientApp\src\Services\login.service.ts" />
+    <None Remove="ClientApp\src\Services\user-management.service.ts" />
   </ItemGroup>
 
   <ItemGroup>
